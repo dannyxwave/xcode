@@ -14,13 +14,20 @@
   <h1 id="logoH1" class="animated flipInX">xCode.no | NOT robot</h1>
   <p>The new Netlify without server!</p>
 
-  <form action="xxx.php" method="get">
+  <form action="notrobot.php" method="get">
     <h2>Google recaptcha tester</h2>
     <input type="text" name="testerx" value="123">
     <label for="testerx"></label>
     <div class="g-recaptcha" data-sitekey="6Lcg1HwUAAAAAI-RSpRwzR9wStmpQtnVsbKF_u6n"></div>
     <button type="submit" name="button">Send form</button>
   </form>
+
+  <?php
+  if(isset($_GET["g-recaptcha-response"])) {
+    echo "<p>G-recaptcha-response: ". $_GET["g-recaptcha-response"] ."</p>";
+  }
+
+  ?>
   <div class="rightTop">
     <p id="dater"></p>
   </div>
