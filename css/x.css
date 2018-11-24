@@ -76,3 +76,17 @@ h1 {
   font-size: 1rem;
   text-shadow: none;
 }
+
+
+form {
+  background: #fff;
+  padding: 5%;
+  color: #4a4a4a;
+}
+form button {
+  padding: 5px;
+  border-radius: 50px;
+}
+form h2 {
+  /* color: #4a4a4a; */
+}
