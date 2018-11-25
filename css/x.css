@@ -1,6 +1,8 @@
 /* ====================================================
    Base styles: opinionated defaults
 =======================================================*/
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+
 *,
 *:before,
 *:after {
@@ -21,8 +23,10 @@ html {
 }
 
 body {
+	margin:0;
+	font-family:arial,tahoma,sans-serif;
   min-height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   font-size: 1.5rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,8 +52,16 @@ html {
 =========================================================*/
 h1 {
   /* user-select: none; */
-  text-shadow: 1px 1px 1px #000,
-               3px 3px 5px #000;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5),
+               3px 3px 5px rgba(0,0,0,0.5);
+}
+
+a h1 {
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .rightTop {
@@ -65,28 +77,104 @@ h1 {
   position: absolute;
   top: 5%;
   left: 0;
-  font-size: 1rem;
-  text-shadow: none;
-  background-color: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  justify-content: center;
+
   padding: 20px;
+
+  background-color: rgba(0, 0, 0, 0.3);
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-}
-.banner p {
+
   font-size: 1rem;
   text-shadow: none;
+  text-transform: uppercase;
+
+  transition: 0.3s all;
+}
+.banner:hover {
+  transform: scale(1.1);
 }
 
+
+/*############################################
+# FORM // https://codepen.io/AmrSubZero/pen/jDxGE
+############################################*/
 
 form {
-  background: #fff;
-  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+	/* margin:10% auto 0 auto; */
+	padding:50px;
+	width:350px;
+	height:auto;
+	overflow:hidden;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius:10px;
   color: #4a4a4a;
 }
-form button {
-  padding: 5px;
-  border-radius: 50px;
+
+form label {
+	font-size:14px;
+	color:darkgray;
 }
-form h2 {
-  /* color: #4a4a4a; */
+
+form label,
+form input {
+	float:left;
+	clear:both;
+}
+form label {
+  margin:10px 0;
+}
+form input, form textarea {
+  background: transparent;
+	margin:3px 0;
+	padding:15px 10px;
+	width:100%;
+	outline:none;
+	border:1px solid #bbb;
+	border-radius:20px;
+	display:inline-block;
+	-webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  -webkit-transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -ms-transition:0.2s ease all;
+  -o-transition:0.2s ease all;
+  transition:0.2s ease all;
+}
+
+form input:focus,
+form textarea:focus {
+	border-color:cornflowerblue;
+}
+
+input[type=submit] {
+	padding:15px 50px;
+	width:auto;
+	background:#1abc9c;
+	border:none;
+	color:white;
+	cursor:pointer;
+	display:inline-block;
+	float:right;
+	clear:right;
+  -webkit-transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -ms-transition:0.2s ease all;
+  -o-transition:0.2s ease all;
+  transition:0.2s ease all;
+}
+
+input:hover {
+	opacity:0.8;
+}
+
+input:active {
+	opacity:0.4;
 }

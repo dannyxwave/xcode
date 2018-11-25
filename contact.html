@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>xcode.no | NOT robot</title>
+  <title>xcode.no | contact</title>
   <link rel="stylesheet" href="css/x.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
 <body>
-  <h1 id="logoH1" class="animated flipInX">xCode.no | NOT robot</h1>
-  <p>The new Netlify without server!</p>
+
+  <a href="index.html" class="banner">Back</a>
+
 
   <!-- <form name="contact" method="POST" netlify>
     <h2>Google recaptcha tester</h2>
@@ -23,24 +24,20 @@
   </form> -->
   <!-- <div class="g-recaptcha" data-sitekey="6Lcg1HwUAAAAAI-RSpRwzR9wStmpQtnVsbKF_u6n"></div> -->
 
-  <form name="contact" method="POST" netlify>
+  <form name="contact" method="POST" netlify> <!-- NOTE: must add «netlify» to activate form-->
+  <h2>Contact</h2>
   <p>
-    <label>Your Name: <input type="text" name="name" /></label>
+    <label>Name: <input type="text" name="name" /></label>
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
+    <label>Email: <input type="email" name="email" /></label>
   </p>
   <p>
     <label>Message: <textarea name="message"></textarea></label>
   </p>
   <p>
-    <button type="submit">Send</button>
+    <!-- <button type="submit">Send</button> -->
+    <input type="submit" name="submit" value="SEND" />
   </p>
 </form>
 
