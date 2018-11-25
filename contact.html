@@ -1,56 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>xcode.no | contact</title>
   <link rel="stylesheet" href="css/x.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 </head>
+
 <body>
 
   <a href="index.html" class="banner">Back</a>
 
+  <form name="contact" method="POST" netlify>
+    <!-- NOTE: must add «netlify» to activate form-->
+    <h2>Contact</h2>
+    <p>
+      <label>Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <div class="g-recaptcha" data-sitekey="6Lcg1HwUAAAAAI-RSpRwzR9wStmpQtnVsbKF_u6n">
+    </div>
+    <p>
+      <input type="submit" name="submit" value="SEND" />
+    </p>
+  </form>
 
-  <!-- <form name="contact" method="POST" netlify>
-    <h2>Google recaptcha tester</h2>
-    <input type="text" name="testerx" value="123">
-    <label for="testerx"></label>
-
-    <button type="submit" name="button">Send</button>
-  </form> -->
-  <!-- <div class="g-recaptcha" data-sitekey="6Lcg1HwUAAAAAI-RSpRwzR9wStmpQtnVsbKF_u6n"></div> -->
-
-  <form name="contact" method="POST" netlify> <!-- NOTE: must add «netlify» to activate form-->
-  <h2>Contact</h2>
-  <p>
-    <label>Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <!-- <button type="submit">Send</button> -->
-    <input type="submit" name="submit" value="SEND" />
-  </p>
-</form>
-
-
-<!-- $_GET["g-recaptcha-response"] -->
   <div class="rightTop">
     <p id="dater"></p>
   </div>
 
   <script src="js/x.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-
 </body>
 
 </html>
