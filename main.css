@@ -250,3 +250,10 @@ Sukkersjekk
   font-size: 0.85rem;
   font-weight: 100;
 }
+
+#copyright {
+  font-size: 0.7rem;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}

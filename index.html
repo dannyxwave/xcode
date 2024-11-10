@@ -71,7 +71,11 @@
         </a>
       </div>
     </div>
+    <p id="copyright">&copy; <span id="current-year"></span> xCode</p>
   </main>
 </body>
+<script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
 
 </html>
