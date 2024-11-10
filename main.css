@@ -24,23 +24,31 @@
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff") format("woff");
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html,
 body {
-  font-size: calc(15px + 2vmin);
-  background-color: #fff;
+  min-height: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 24px;
+  background-color: #fff;
+  min-height: 100%;
   font-family: "San Francisco", Helvetica, sans-serif;
   color: #fff;
+  padding: 1vw;
 }
 
 main {
-  padding: 0 5vw;
-  height: 100%;
-  min-height: 98vh;
+  min-height: 100%;
   background-color: #131415;
   border-radius: 58px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* mobile */
@@ -53,21 +61,31 @@ main {
   }
 }
 
+.container {
+  padding: 4vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 h1 {
-  font-size: 7vw;
-  margin: 15px 0;
+  font-size: 6rem;
   text-transform: uppercase;
   font-weight: 900;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
   font-size: 1rem;
   font-weight: 100;
   color: #ccc;
-  margin-top: -25px;
+  margin-bottom: 10vh;
 }
 
 .linksContainer {
+  min-height: 100%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -97,8 +115,16 @@ a img {
   width: auto;
 }
 
+a div {
+  transition: 150ms;
+}
+
 a:hover img {
   transform: scale(1.1);
+}
+
+a:hover div {
+  transform: translateY(-10%);
 }
 
 /***************
@@ -107,30 +133,36 @@ Car loan
 #car-loan {
   color: #26B0ED;
   flex-direction: row;
+  line-height: 1;
 }
-
+#car-loan img {
+  padding-right: 20px;
+}
 /***************
 Browser info
 ***************/
 #browser-info {
-  color: #24AD76;
   flex-direction: row;
 }
 #browser-info img {
   height: 250px;
   width: auto;
   margin-bottom: -50px;
+  margin-left: -20px;
+  padding-right: 5px;
 }
 #browser-info div {
   margin-left: -50px;
 }
 #browser-info p {
   margin-bottom: -10px;
+  color: #24AD76;
 }
 #browser-info ul {
   font-size: 0.8rem;
   margin-left: -25px;
-  letter-spacing: -0.05rem;
+  font-weight: 100;
+  color: #131415;
 }
 
 /***************
@@ -147,10 +179,15 @@ Map converter
   color: #DA5B5B;
   flex-direction: row;
 }
-#map-converter span {
+#map-converter img {
+  margin-bottom: -40px;
+  margin-left: -20px;
+}
+#map-converter div {
   font-size: 1rem;
-  margin-top: -60px;
+  margin-top: -20px;
   margin-left: -40px;
+  text-align: left;
 }
 
 /***************
@@ -199,11 +236,14 @@ Sukkersjekk
   margin-bottom: -30px;
   margin-right: -30px;
 }
-#sukkersjekk p {
+#sukkersjekk div {
   margin-bottom: -70px;
   margin-right: -20px;
+}
+#sukkersjekk p {
   color: #36D2C1;
   line-height: 0.6;
+  margin-bottom: -10px;
 }
 #sukkersjekk span {
   color: #1F1F1F;
