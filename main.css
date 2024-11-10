@@ -251,8 +251,12 @@ Sukkersjekk
   font-weight: 100;
 }
 
+footer {
+  margin-top: -30px;
+}
+
 #copyright {
-  font-size: 0.7rem;
+  font-size: 10px;
   font-weight: 100;
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
