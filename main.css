@@ -251,6 +251,17 @@ Sukkersjekk
   font-weight: 100;
 }
 
+/***************
+Tesla referral app
+***************/
+#tesla {
+  color: #131415;
+}
+
+/***************
+Footer
+***************/
+
 footer {
   margin-top: -30px;
   width: 100%;
