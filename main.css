@@ -82,9 +82,10 @@ h2 {
   font-weight: 100;
   color: #ccc;
   margin-bottom: 10vh;
+  margin-top: -15px;
 }
 
-.linksContainer {
+.cards {
   min-height: 100%;
   display: flex;
   justify-content: center;
@@ -256,6 +257,24 @@ Tesla referral app
 ***************/
 #tesla {
   color: #131415;
+}
+
+/***************
+Note calculator
+***************/
+#note-calc {
+  /*color:rgb(92, 41, 201);*/
+  color:rgb(202, 187, 76);
+}
+#note-calc img {
+  height: 130px;
+  width: auto;
+}
+#note-calc div:first-child {
+  margin-bottom: -20px;
+}
+#note-calc div:last-child {
+  margin-top: -20px;
 }
 
 /***************
