@@ -53,6 +53,8 @@ main {
 
 .container {
   padding: 4vw;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -73,10 +75,9 @@ h2 {
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 a {
@@ -88,7 +89,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   height: 185px;
-  width: 295px;
+  width: 100%;
   border: 1px solid #000;
   border-radius: 35px;
   background-color: #fff;
@@ -234,7 +235,7 @@ Sukkersjekk
 }
 #sukkersjekk span {
   color: #1F1F1F;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 100;
 }
 
@@ -279,8 +280,15 @@ footer {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* mobile */
-@media (max-width: 768px) {
+/* tablet */
+@media (max-width: 1230px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* mobile 768px */
+@media (max-width: 870px) {
   h1 {
     line-height: 1.8;
   }
@@ -290,5 +298,14 @@ footer {
   }
   footer {
     margin-top: -25px;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
