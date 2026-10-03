@@ -97,6 +97,15 @@
 </body>
 <script>
   document.getElementById('current-year').textContent = new Date().getFullYear();
+
+  document.querySelectorAll('.cards a').forEach((card, i) => {
+    card.style.setProperty('--i', i);
+    card.addEventListener('pointermove', (e) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--x', `${e.clientX - rect.left}px`);
+      card.style.setProperty('--y', `${e.clientY - rect.top}px`);
+    });
+  });
 </script>
 
 </html>
