@@ -361,6 +361,8 @@ Footer
 footer {
   margin-top: -40px;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 #copyright {
