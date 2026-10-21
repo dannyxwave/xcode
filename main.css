@@ -289,6 +289,23 @@ Bigwwwave
 }
 
 /***************
+Calendar converter
+***************/
+#cal-converter {
+  color: #3B7FE0;
+  flex-direction: row;
+  gap: 20px;
+}
+#cal-converter img {
+  height: 120px;
+  width: auto;
+}
+#cal-converter div {
+  font-size: 1rem;
+  text-align: left;
+}
+
+/***************
 Sukkersjekk
 ***************/
 #sukkersjekk {
