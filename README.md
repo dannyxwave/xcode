@@ -3,8 +3,8 @@
 Static site for [xcode.no](https://xcode.no) – plain HTML/CSS, no build step.
 
 ## Projects
-- [Sumify](https://numflow-sumsum.web.app)
-- [NumFlow](https://numflow.app)
+- [Sumify](https://sumify.xcode.no)
+- [NumFlow](https://numflow.xcode.no)
 - [Tesla Referral App](https://teslainvite.com)
 - [Car Loan Calculator](https://bil.xcode.no/)
 - [Browser Info](https://ip.xcode.no/)
