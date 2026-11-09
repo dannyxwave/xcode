@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -33,7 +32,7 @@
       </div>
       <div class="cards">
         <a id="sumify" href="https://sumify.xcode.no" target="_blank" rel="noopener">
-          <img src="img/sumify.webp" height="500" width="500" class="scale-in-center" alt="Sumify Logo" />
+          <img src="img/sumify.webp" height="500" width="500" class="scale-in-center" alt="" />
           <div>
             Sumify
           </div>
@@ -42,22 +41,22 @@
           <div>
             NumFlow
           </div>
-          <img src="img/8817310.webp" height="450" width="450" class="scale-in-center" alt="3D note calculator" />
+          <img src="img/8817310.webp" height="450" width="450" class="scale-in-center" alt="" />
         </a>
         <a id="tesla" href="https://teslainvite.com" target="_blank" rel="noopener">
-          <img src="img/cybertruck.webp" height="227" width="411" class="scale-in-center" alt="3D Cybertruck" />
+          <img src="img/cybertruck.webp" height="227" width="411" class="scale-in-center" alt="" />
           <div>
             Tesla Referral App
           </div>
         </a>
         <a id="car-loan" href="https://bil.xcode.no/" target="_blank" rel="noopener">
-          <img src="img/car-loan.webp" height="223" width="200" class="scale-in-center" alt="Car Loan Calculator" />
+          <img src="img/car-loan.webp" height="223" width="200" class="scale-in-center" alt="" />
           <div>
             Car<br />Loan<br />Calculator
           </div>
         </a>
         <a id="browser-info" href="https://ip.xcode.no/" target="_blank" rel="noopener">
-          <img src="img/info.webp" height="410" width="364" class="scale-in-center" alt="Browser Info" />
+          <img src="img/info.webp" height="410" width="364" class="scale-in-center" alt="" />
           <div>
             <p>Check</p>
             <ul>
@@ -71,35 +70,35 @@
         </a>
         <a id="url-shortener" href="https://url.xcode.no/" target="_blank" rel="noopener">
           <img src="img/url.webp" height="215" width="290" class="scale-in-center"
-            alt="Url Shortener" />
+            alt="" />
           <div>
-            Shorten URL's
+            Shorten URLs
           </div>
         </a>
         <a id="map-converter" href="https://maps.xcode.no/" target="_blank" rel="noopener">
-          <img src="img/map.webp" height="192" width="371" class="scale-in-center" alt="Apple to Google Maps" />
+          <img src="img/map.webp" height="192" width="371" class="scale-in-center" alt="" />
           <div>
             <span>Open Apple<br />Maps link<br />in Google<br />Maps</span>
           </div>
         </a>
         <a id="go-upload" href="https://go.xcode.no/" target="_blank" rel="noopener">
           <div><span>Upload<br/>files</span></div>
-          <img src="img/upload.webp" height="241" width="288" class="scale-in-center" alt="Go | Upload" />
+          <img src="img/upload.webp" height="241" width="288" class="scale-in-center" alt="" />
         </a>
         <a id="avo-do" href="https://todo.xcode.no/" target="_blank" rel="noopener">
-          <img src="img/todo.webp" height="193" width="212" class="scale-in-center" alt="AvoDo | Todo" />
+          <img src="img/todo.webp" height="193" width="212" class="scale-in-center" alt="" />
           <div>TODO APP</div>
         </a>
         <a id="sukkersjekk" href="https://sukkersjekk.xcode.no/" target="_blank" rel="noopener">
           <div><p>Sukkersjekk</p><span>Calculate sugar cubes in food</span></div>
-          <img src="img/hand.webp" height="286" width="347" class="scale-in-center" alt="Sukkersjekk" />
+          <img src="img/hand.webp" height="286" width="347" class="scale-in-center" alt="" />
         </a>
         <a id="bigwwwave" href="https://bigwwwave.xcode.no/" target="_blank" rel="noopener">
-          <img src="img/mac-bigwwwave.webp" height="336" width="444" class="scale-in-center" alt="Bigwwwave" />
+          <img src="img/mac-bigwwwave.webp" height="336" width="444" class="scale-in-center" alt="" />
           <div>Web agency</div>
         </a>
         <a id="cal-converter" href="https://cal.xcode.no/" target="_blank" rel="noopener">
-          <img src="img/calendar.webp" height="256" width="256" class="scale-in-center" alt="Calendar Converter" />
+          <img src="img/calendar.webp" height="256" width="256" class="scale-in-center" alt="" />
           <div>
             <span>Add events<br />to Google<br />Calendar</span>
           </div>
@@ -111,18 +110,18 @@
   <footer>
     <p id="copyright">&copy; <span id="current-year"></span> xCode</p>
   </footer>
-</body>
-<script>
-  document.getElementById('current-year').textContent = new Date().getFullYear();
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 
-  document.querySelectorAll('.cards a').forEach((card, i) => {
-    card.style.setProperty('--i', i);
-    card.addEventListener('pointermove', (e) => {
-      const rect = card.getBoundingClientRect();
-      card.style.setProperty('--x', `${e.clientX - rect.left}px`);
-      card.style.setProperty('--y', `${e.clientY - rect.top}px`);
+    document.querySelectorAll('.cards a').forEach((card, i) => {
+      card.style.setProperty('--i', i);
+      card.addEventListener('pointermove', (e) => {
+        const rect = card.getBoundingClientRect();
+        card.style.setProperty('--x', `${e.clientX - rect.left}px`);
+        card.style.setProperty('--y', `${e.clientY - rect.top}px`);
+      });
     });
-  });
-</script>
+  </script>
+</body>
 
 </html>
